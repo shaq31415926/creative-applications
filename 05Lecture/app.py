@@ -12,7 +12,8 @@ print(prompt)
 # create a slider
 duration = st.slider("Select time duration (in seconds)", 0, 20, 10)
 
-if prompt:
+# if the user enters a prompt or adjusts the slider
+if prompt and duration:
     # load the pretrained model
     model_name = "facebook/musicgen-small"
     processor = AutoProcessor.from_pretrained(model_name)
