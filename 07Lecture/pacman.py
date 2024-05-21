@@ -2,8 +2,11 @@ import turtle
 # reference: https://replit.com/talk/challenge/How-to-draw-Pixel-Art-on-Python-with-Turtle/7556
 
 wn = turtle.Screen()
-w.setup(width, height)
+# setup the screen size - width, height
+wn.setup(1200, 1200)
+# change the colour
 wn.bgcolor("Black")
+# create the turtle
 t = turtle.Turtle()
 t.speed(0)
 t.pensize(4)
