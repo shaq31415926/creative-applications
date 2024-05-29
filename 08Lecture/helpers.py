@@ -3,6 +3,7 @@
 import pygame as pg
 import cv2
 
+
 def get_image(path, rgb=True):
     image = cv2.imread(path)
     transposed_image = cv2.transpose(image)
@@ -16,9 +17,11 @@ def get_image(path, rgb=True):
     return image
 
 
-def resize_cv2_image(image):
-    resized_image = cv2.resize(image, (640, 360), interpolation=cv2.INTER_AREA)
+def resize_cv2_image(image, height, width):
+    resized_image = cv2.resize(image, (height, width), interpolation=cv2.INTER_AREA)
     cv2.imshow("resized cv image", resized_image)
+
+    return resized_image
 
 
 def draw_converted_image(image, ascii_chars, font_style, font_size, surface):
