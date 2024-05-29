@@ -36,7 +36,5 @@ while True:
     pg.display.flip()
     # launch the image using cv for comparison
     cv2.imshow("Original image flipped", image)
-
-
-# save image to a location and name of your choice
-save_image(surface, f"image/{new_file_name}.png")
+    # save image to a location and name of your choice
+    save_image(surface, f"image/{new_file_name}.png")
