@@ -16,10 +16,10 @@ if not os.path.exists(directory):
     os.makedirs(directory)
 
 # specify some initial parameters
-RENDER_SEED = 4
-ITERATIONS = 150
+RENDER_SEED = 8797665
+ITERATIONS = 500
 RESOLUTION = 1024
-Z_DIMS = 6
+Z_DIMS = 12
 step_size = 2.0 / ITERATIONS
 
 # each iteration we will adjust the z value
